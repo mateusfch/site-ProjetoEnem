@@ -1,0 +1,162 @@
+* {
+  text-decoration: none;
+}
+.cabecalho {
+  /* background-image: linear-gradient(90deg, white, #fdfdfd); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  font-family: "Archivo", sans-serif;
+  color: #929292;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h5#subtitulo {
+  color: #59597c;
+  letter-spacing: 10px;
+  opacity: 75%;
+}
+
+h1#titulo {
+  color: #59597c;
+  font-size: 4.1rem;
+}
+
+p#descricao {
+  color: #8685a0;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+}
+
+.btn-primary {
+  background-color: #ab92ea;
+  border-color: #ab92ea;
+  color: #eadbfa;
+  width: 10rem;
+  border-radius: 1.5rem;
+}
+
+.btn-outline-primary {
+  border-color: #9879e6;
+  color: #9879e6;
+  width: 10rem;
+  border-radius: 1.5rem;
+}
+
+/*Xsmall*/
+@media (max-width: 575.98px) {
+  h1#titulo {
+    font-size: 2rem;
+  }
+  h5#subtitulo {
+    font-size: 1rem;
+  }
+
+  p#descricao {
+    font-size: 0.8rem;
+  }
+}
+
+.container#vantagens {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-vantagem {
+  color: #59597c;
+  opacity: 85%;
+}
+.descricao-vantagem {
+  color: #59597c;
+  opacity: 85%;
+}
+h6#titulo-principal-vantagens {
+  font-size: 1.1rem;
+  color: #59597c;
+  opacity: 95%;
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+/*small*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1#titulo {
+    font-size: 2rem;
+  }
+  h5#subtitulo {
+    font-size: 1rem;
+  }
+  p#descricao {
+    font-size: 1rem;
+  }
+}
+
+/*medium*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1#titulo {
+    font-size: 3rem;
+  }
+  h5#subtitulo {
+    font-size: 1rem;
+  }
+  p#descricao {
+    font-size: 1rem;
+  }
+}
+
+.bi {
+  color: #9879e6;
+  opacity: 85%;
+}
+
+.container#main {
+  background-color: #f9f6ff;
+  border-radius: 10px;
+}
+
+.container#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f6ff;
+  border-radius: 10px;
+  align-items: center;
+}
+
+h1#titulo-contato {
+  text-align: center;
+  color: #59597c;
+  opacity: 85%;
+}
+
+.bi-envelope-fill,
+.bi-facebook,
+.bi-instagram {
+  font-size: 2.5em;
+  opacity: 100%;
+  color: #9879e6;
+}
+
+p#contato-texto {
+  color: #8685a0;
+  font-size: 1.1rem;
+  text-align: center;
+}
