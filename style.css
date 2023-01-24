@@ -160,3 +160,60 @@ p#contato-texto {
   font-size: 1.1rem;
   text-align: center;
 }
+
+.container#cursos {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 1rem;
+}
+
+.row#minicards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-left: 1.1rem;
+  padding-bottom: 3rem;
+}
+h1#titulo-cursos {
+  text-align: left;
+  color: #59597c;
+  opacity: 85%;
+}
+
+.row#pessoas {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h3.nome-prof,
+p.descricao-prof,
+h5.card-title,
+p.card-text {
+  color: #59597c;
+}
+
+.container#quemsomos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+h1#titulo-quemsomos {
+  text-align: left;
+  color: #59597c;
+  opacity: 85%;
+}
+
+h6#texto-creditos {
+  text-align: center;
+  color: #59597c;
+  padding-top: 1rem;
+  opacity: 50%;
+}

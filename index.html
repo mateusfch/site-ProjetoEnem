@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,16 +16,19 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Projeto Enem</title>
   </head>
   <body>
     <header class="cabecalho">
+      
       <img class="cabecalho-imagem" src="logo.png" alt="Logo do Projeto" />
       <nav class="cabecalho-menu">
+
+        
         <a class="cabecalho-menu-item" href="#">Início</a>
-        <a class="cabecalho-menu-item" href="#">Cursos</a>
-        <a class="cabecalho-menu-item" href="#">Contato</a>
-        <a class="cabecalho-menu-item" href="#">Sobre nós</a>
+        <a class="cabecalho-menu-item" href="#cursos">Cursos</a>
+        <a class="cabecalho-menu-item" href="#quemsomos">Quem somos</a>
+        <a class="cabecalho-menu-item" href="#footer">Contato</a>
       </nav>
     </header>
 
@@ -87,6 +89,89 @@
       </div>
     </div>
 
+    <!-- CURSOS cards -->
+    <div class="container" id="cursos">
+      <h1 id="titulo-cursos"><i class="bi bi-vector-pen"></i> Cursos</h1>
+      <div class="row justify-content-center" id="minicards">
+        <div class="col-md-3 col-sm-12">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Português</h5>
+              <p class="card-text">
+                Este curso tem 40 horas e é desenvolvido ao longo de cinco
+                módulos, abordando principalmente tópicos gramaticais.
+              </p>
+              <a href="#cursos" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="card" style="width: 18rem">
+            <!-- <img src="..." class="card-img-top" alt="..." /> -->
+            <div class="card-body">
+              <h5 class="card-title">Curso de Língua Estrageira</h5>
+              <p class="card-text">
+                Este curso tem 30 horas e é desenvolvido ao longo de quatro
+                módulos, abordando principalmente tópicos gramaticais.
+              </p>
+              <a href="#cursos" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="card" style="width: 18rem">
+            <!-- <img src="..." class="card-img-top" alt="..." /> -->
+            <div class="card-body">
+              <h5 class="card-title">Curso de Literatura</h5>
+              <p class="card-text">
+                Este curso tem 35 horas e é desenvolvido ao longo de cinco
+                módulos, abordando a literatura portuguesa.
+              </p>
+              <a href="#cursos" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="card" style="width: 18rem">
+            <!-- <img src="..." class="card-img-top" alt="..." /> -->
+            <div class="card-body">
+              <h5 class="card-title">Curso de Redação</h5>
+              <p class="card-text">
+                Este curso tem 45 horas e é desenvolvido ao longo de dez
+                módulos, abordando principalmente redação Enem.
+              </p>
+              <a href="#cursos" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quem somos -->
+    <div class="container" id="quemsomos">
+      <h1 id="titulo-quemsomos"><i class="bi bi-people"></i> Quem somos</h1>
+      <div class="row align-items-center" id="pessoas">
+        <div class="col-md-3 col-sm-12">
+          <img class="img-fluid" src="/assets/port.png" />
+          <h3 class="nome-prof">Cristina Loui</h3>
+          <p class="descricao-prof">Mestra e graduada em Letras na UFRGS</p>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <img class="img-fluid" src="/assets/ing.png" />
+          <h3 class="nome-prof">Ana Garcia</h3>
+          <p class="descricao-prof">Mestra e graduada em Inglês na USP</p>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <img class="img-fluid" src="/assets/lit.png" />
+          <h3 class="nome-prof">Carlo Betin</h3>
+          <p class="descricao-prof">Mestre e graduado em História na PUCRS</p>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <img class="img-fluid" src="/assets/red.png" />
+          <h3 class="nome-prof">Lisa Winter</h3>
+          <p class="descricao-prof">Graduada em Letras na PUCRS</p>
+        </div>
+      </div>
+    </div>
     <div class="container" id="footer">
       <h1 id="titulo-contato">Contato</h1>
       <p id="contato-texto">
@@ -99,6 +184,10 @@
         <i class="bi bi-facebook"> </i>
         <i class="bi bi-instagram"> </i>
       </div>
+      <h6 id="texto-creditos"><i>Design e implementação por Mateus Charloto <i class="bi bi-emoji-sunglasses"></i>
+      </h6>  
+    </div>
+
     </div>
   </body>
 </html>
