@@ -1,6 +1,11 @@
 * {
   text-decoration: none;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
 .cabecalho {
   /* background-image: linear-gradient(90deg, white, #fdfdfd); */
   display: flex;
@@ -12,9 +17,14 @@
 
 .cabecalho-menu {
   display: flex;
-  gap: 32px;
+  gap: 3.5rem;
 }
-
+.container#container-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .cabecalho-menu-item {
   font-family: "Archivo", sans-serif;
   color: #929292;
@@ -53,6 +63,7 @@ p#descricao {
   color: #eadbfa;
   width: 10rem;
   border-radius: 1.5rem;
+  margin-right: 0.3rem;
 }
 
 .btn-outline-primary {
@@ -60,20 +71,6 @@ p#descricao {
   color: #9879e6;
   width: 10rem;
   border-radius: 1.5rem;
-}
-
-/*Xsmall*/
-@media (max-width: 575.98px) {
-  h1#titulo {
-    font-size: 2rem;
-  }
-  h5#subtitulo {
-    font-size: 1rem;
-  }
-
-  p#descricao {
-    font-size: 0.8rem;
-  }
 }
 
 .container#vantagens {
@@ -97,8 +94,53 @@ h6#titulo-principal-vantagens {
   padding-bottom: 1.5rem;
   letter-spacing: 0.5rem;
 }
+/*Xsmall*/
+@media (max-width: 575.98px) {
+  .container#main {
+    padding-top: 2rem;
+  }
+  .cabecalho-menu {
+    display: none;
+  }
+  h1#titulo {
+    font-size: 2rem;
+  }
+  h5#subtitulo {
+    font-size: 0.8rem;
+  }
+
+  p#descricao {
+    font-size: 0.8rem;
+  }
+  .dropdown#menu-mobile {
+    display: block;
+  }
+  .btn-primary {
+    background-color: #ab92ea;
+    border-color: #ab92ea;
+    color: #eadbfa;
+    width: 8rem;
+    border-radius: 1.5rem;
+  }
+  .btn-outline-primary {
+    border-color: #9879e6;
+    color: #9879e6;
+    width: 8em;
+    border-radius: 1.5rem;
+  }
+}
 /*small*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .container#main {
+    padding-top: 2rem;
+  }
+  .cabecalho-menu {
+    display: none;
+  }
+  .dropdown#menu-mobile {
+    display: block;
+  }
+
   h1#titulo {
     font-size: 2rem;
   }
@@ -112,6 +154,13 @@ h6#titulo-principal-vantagens {
 
 /*medium*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .container#main {
+    padding-top: 2rem;
+  }
+  .dropdown#menu-mobile {
+    display: none;
+  }
+
   h1#titulo {
     font-size: 3rem;
   }
@@ -120,6 +169,12 @@ h6#titulo-principal-vantagens {
   }
   p#descricao {
     font-size: 1rem;
+  }
+}
+/*large*/
+@media (min-width: 1200px) {
+  .dropdown#menu-mobile {
+    display: none;
   }
 }
 
@@ -195,7 +250,8 @@ h1#titulo-cursos {
 h3.nome-prof,
 p.descricao-prof,
 h5.card-title,
-p.card-text {
+p.card-text,
+.dropdown-item {
   color: #59597c;
 }
 
@@ -216,4 +272,9 @@ h6#texto-creditos {
   color: #59597c;
   padding-top: 1rem;
   opacity: 50%;
+}
+
+.btn#dropdownMenuButton1 {
+  color: #9879e6;
+  font-size: 1.5rem;
 }
