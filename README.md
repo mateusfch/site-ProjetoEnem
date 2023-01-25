@@ -7,7 +7,4 @@ Para a implementação e prototipagem:
 * CSS
 * Bootstrap
 * Figma
-# Preview
-![](https://s9.gifyu.com/images/Projeto-Enem---Google-Chrome-2023-01-24-14-36-30.gif)
-
 
